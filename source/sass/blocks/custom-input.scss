@@ -18,18 +18,18 @@
             margin-left: 30px;
             padding: 10px;
 
-            border: 2px solid rgba($color-default-black, 0.2);
+            border: 2px solid rgba($color-black, 0.2);
             border-radius: 5px;
             outline: none;
 
             transition: border $trans-default;
 
             &:hover {
-                border: 2px solid rgba($color-default-black, 0.5);
+                border: 2px solid rgba($color-black, 0.5);
             }
 
             &:focus {
-                border: 2px solid rgba($color-default-black, 0.8);
+                border: 2px solid rgba($color-black, 0.8);
             }
         }
     }

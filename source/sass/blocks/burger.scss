@@ -1,0 +1,53 @@
+.burger {
+    position: relative;
+
+    width: 48px;
+    height: 48px;
+
+    color: inherit;
+
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+        position: absolute;
+        right: 5px;
+
+        height: 2px;
+
+        content: "";
+
+        background-color: $color-black;
+        transition: transform $trans-600, width $trans-600;
+    }
+
+    &::before {
+        top: 17px;
+        width: 32px;
+    }
+
+    &::after {
+        width: 18px;
+        bottom: 16px;
+    }
+
+    &.on {
+        &::before,
+        &::after {
+            top: 50%;
+            width: 26px;
+            bottom: unset;
+            background-color: $color-white;
+        }
+
+        &::after {
+            transform: rotate(45deg);
+        }
+
+        &::before {
+            transform: rotate(-45deg);
+        }
+    }
+}

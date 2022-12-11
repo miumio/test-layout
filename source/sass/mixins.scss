@@ -1,6 +1,12 @@
-@mixin vp($vp) {
+@mixin media($vp) {
     @media (max-width: #{$vp - 1}) {
         @content;
     }
+}
+
+@mixin list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 

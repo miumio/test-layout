@@ -120,14 +120,6 @@ block main
     main
         .container
             h1 UI-kit
-            //- все модалки проекта добавляем сюда, для удобства тестирования
-            section(id="modals")
-                h2 Modals
-                p
-                    +btn({text: "modal-feedback"})(data-open-modal="feedback")
-                p
-                    +btn({text: "modal-success"})(data-open-modal="success")
-
             section(id="buttons")
                 h2 Buttons
                 +btn({text: "Текст", href: "#"})
@@ -179,9 +171,3 @@ block main
 
     script
         include ../../js/inline/ui-kit.js
-
-block modals
-    +modal("modal--feedback")(data-modal="feedback")
-        +modal-feedback()
-    +modal("modal--success modal--no-scale modal--fit-content")(data-modal="success")
-        +modal-success()

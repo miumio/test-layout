@@ -49,7 +49,7 @@
             width: 16px;
             height: 16px;
 
-            border: 1px solid rgba($color-default-black, 0.2);
+            border: 1px solid rgba($color-black, 0.2);
 
             transition: border $trans-default;
 
@@ -80,7 +80,7 @@
             width: 16px;
             height: 16px;
 
-            border: 1px solid rgba($color-default-black, 0.2);
+            border: 1px solid rgba($color-black, 0.2);
             border-radius: 50%;
 
             transition: border $trans-default;
@@ -105,10 +105,10 @@
     }
 
     input:checked + .custom-toggle__icon {
-        border: 1px solid rgba($color-default-black, 0.8);
+        border: 1px solid rgba($color-black, 0.8);
 
         &::before {
-            background-color: rgba($color-default-black, 0.8);
+            background-color: rgba($color-black, 0.8);
         }
     }
 

@@ -53,7 +53,7 @@
         padding: 5px 10px;
 
         background-color: $color-transparent;
-        border: 2px solid rgba($color-default-black, 0.2);
+        border: 2px solid rgba($color-black, 0.2);
         border-radius: 5px;
         outline: none;
         cursor: pointer;
@@ -61,11 +61,11 @@
         transition: border $trans-default;
 
         &:hover {
-            border: 2px solid rgba($color-default-black, 0.5);
+            border: 2px solid rgba($color-black, 0.5);
         }
 
         &:focus {
-            border: 2px solid rgba($color-default-black, 0.8);
+            border: 2px solid rgba($color-black, 0.8);
         }
     }
 
@@ -82,8 +82,8 @@
 
         list-style: none;
 
-        background-color: $color-default-white;
-        border: 2px solid $color-default-black;
+        background-color: $color-white;
+        border: 2px solid $color-black;
         transform: translateY(100%);
         visibility: hidden;
         opacity: 0;
@@ -100,12 +100,12 @@
         transition: background-color $trans-default;
 
         &[aria-selected="true"] {
-            background-color: rgba($color-default-white, 0.2);
+            background-color: rgba($color-white, 0.2);
 
             @media (hover: hover), screen and (min-width: 0\0) {
                 &:hover,
                 &:focus {
-                    background-color: rgba($color-default-white, 0.2);
+                    background-color: rgba($color-white, 0.2);
                 }
             }
         }
@@ -113,7 +113,7 @@
         @media (hover: hover), screen and (min-width: 0\0) {
             &:hover,
             &:focus {
-                background-color: rgba($color-default-white, 0.4);
+                background-color: rgba($color-white, 0.4);
             }
         }
     }
@@ -154,7 +154,7 @@
         height: 10px;
         margin-left: auto;
 
-        background-color: $color-default-black;
+        background-color: $color-black;
 
         transition: transform $trans-default;
 

@@ -4,10 +4,11 @@
 @import "global/reboot";
 @import "global/utils";
 @import "global/container";
-@import "blocks/header";
+
+// Blocks
+@import "blocks/page-header";
 @import "blocks/main-nav";
-@import "blocks/footer";
-@import "blocks/modal";
+@import "blocks/burger";
 @import "blocks/btn";
 @import "blocks/custom-input";
 @import "blocks/custom-toggle";

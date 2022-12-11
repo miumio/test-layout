@@ -1,0 +1,29 @@
+mixin page-header
+    - const headerLinks = [ "Каталог", "О кампании", "Магазины" ]
+
+    header.page-header&attributes(attributes)
+        .container
+            nav.main-nav
+                ul.main-nav__menu
+                    each item in headerLinks
+                        li.main-nav__item
+                            a.main-nav__link(href="#")=item
+                a.main-nav__logo(href="index.html" aria-label="Переход на главную")
+                    +icon("icon-logo", 100, 22)
+                ul.main-nav__menu.main-nav__menu--right
+                    li.main-nav__item
+                        a.main-nav__link(href="#",  aria-label="Поиск")
+                            +icon("icon-search", 20, 20)
+                    li.main-nav__item
+                        a.main-nav__link(href="#",  aria-label="ссылка на личный кабинет")
+                            +icon("icon-user", 20, 20)
+                    li.main-nav__item
+                        a.main-nav__link(href="#",  aria-label="избранное")
+                            +icon("icon-heart", 20, 20)
+                        span.main-nav__num 8
+                    li.main-nav__item.main-nav__busket
+                        a.main-nav__link(href="#",  aria-label="избранное")
+                            +icon("icon-busket", 20, 20)
+                        span.main-nav__num 4
+                button.main-nav__toggler.burger(type="button" aria-label="Переключатель отображения меню", aria-pressed="false", data-opened="Меню открыто", data-closed="Меню закрыто")
+                    +icon("icon-burger", 20, 20)

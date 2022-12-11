@@ -1,9 +1,0 @@
-.footer {
-    padding: 100px 0;
-
-    background-color: $color-primary;
-
-    @include vp($vp-mobile) {
-        background-color: red;
-    }
-}
