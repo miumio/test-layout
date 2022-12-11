@@ -1,0 +1,23 @@
+.breadcrumbs {
+    @include list-reset;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    font-size: 12px;
+    line-height: 1.25;
+    color: $color-grey;
+
+    &__link {
+        color: inherit;
+
+        &--current {
+            color: $color-black;
+        }
+    }
+
+    &__item:not(:last-child)::after {
+        content: "/";
+        padding: 0 10px;
+    }
+}
