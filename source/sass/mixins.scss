@@ -1,0 +1,6 @@
+@mixin vp($vp) {
+    @media (max-width: #{$vp - 1}) {
+        @content;
+    }
+}
+
