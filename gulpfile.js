@@ -117,7 +117,8 @@ const copy = () => {
         .src(
             [
                 'source/fonts/**',
-                'source/img/**',
+                'source/img/content/**',
+                'source/img/svg/**',
                 'source/data/**',
                 'source/favicon/**',
                 'source/video/**',
@@ -138,7 +139,7 @@ const clean = () => {
 const syncServer = () => {
     server.init({
         server: 'build/',
-        index: 'sitemap.html',
+        index: 'index.html',
         notify: false,
         open: true,
         cors: true,
