@@ -20,7 +20,7 @@
         content: "";
 
         background-color: $color-black;
-        transition: transform $trans-600, width $trans-600;
+        transition: transform $trans-default, width $trans-default;
     }
 
     &::before {

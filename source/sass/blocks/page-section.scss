@@ -1,0 +1,10 @@
+.page-section {
+    &__header {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__text {
+        margin: 0;
+    }
+}

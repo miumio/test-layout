@@ -27,3 +27,23 @@
     src: url("../fonts/Helvetica-Bold.woff2") format("woff2"),
         url("../fonts/Helvetica-Bold.woff") format("woff");
 }
+
+@font-face {
+    font-style: normal;
+    font-weight: 400;
+    font-family: "HelveticaNeue";
+
+    font-display: swap;
+    src: url("../fonts/HelveticaNeue.woff2") format("woff2"),
+        url("../fonts/HelveticaNeue.woff") format("woff");
+}
+
+@font-face {
+    font-style: normal;
+    font-weight: 700;
+    font-family: "HelveticaNeue";
+
+    font-display: swap;
+    src: url("../fonts/HelveticaNeue-Bold.woff2") format("woff2"),
+        url("../fonts/HelveticaNeue-Bold.woff") format("woff");
+}

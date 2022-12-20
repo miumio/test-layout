@@ -1,0 +1,46 @@
+mixin product-card(data)
+
+    article.product-card
+        a.product-card__link(href="")
+        .product-card__header
+            if data.img
+                .product-card__img
+                    +picture("content", data.img, "jpg", 260, 320, "изображение товара")
+            .product-card__info
+                h3.product-card__title.text.text--reg-20 !{data.title}
+                dl.product-card__details.details
+                    dt.details__title Артикул
+                    dd.details__note !{data.article}
+                    dt.details__title Сезон
+                    dd.details__note !{data.season}
+                .product-card__twister.twister
+                    form
+                        fieldset
+                            legend Выберите размер
+                            if data.sizes
+                                each item in data.sizes
+                                    +size-toggler({ id: item.id, name: "size", checked: item.checked, disabled: item.disabled })
+
+                        fieldset
+                            legend Выберите цвет
+                            if data.colors
+                                each item in data.colors
+                                    +color-toggler({ id: item.id, name: "color", checked: item.checked, style: item.style })
+
+            .product-card__price-block
+                .product-card__price
+                    p.text.text--strike-through 12 000 ₽
+                    p.text.text--bold-20 10 000 ₽
+                .product-card__counter.counter
+                    button.counter__btn.btn(type="button" aria-label="Уменьшить количество")
+                        +icon("icon-minus", 32, 32)
+                    span.counter__count 10
+                    button.counter__btn.btn(type="button" aria-label="Увеличить количество")
+                        +icon("icon-plus", 32, 32)
+                .product-card__price
+                    p.text.text--strike-through 12 000 ₽
+                    p.text.text--bold-20 24 000 ₽
+
+            .product-card__delete-btn
+                button.btn(type="button" aria-label="Удалить товар")
+                    +icon("icon-close", 22, 22)

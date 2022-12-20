@@ -2,7 +2,7 @@
     position: relative;
     padding: 10px 0;
     font-size: 14px;
-    transition: background-color $trans-600;
+    transition: background-color $trans-default;
 
     &.nav-is-open {
         @include media($vp-tablet) {

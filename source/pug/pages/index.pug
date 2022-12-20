@@ -14,6 +14,103 @@ block main
         .page-content
             .container
                 +breadcrumbs([ "Оформление заказа" ])
+                section.page-content__wrapper.page-section
+                    .page-content__column.page-content__column--wide
+                        .page-section__header
+                            h1.text.text--reg-40 Оформление заказа
+                            p.text.text--reg-14.text--color-grey Есть аккаунт?
+                                a.link(href="#") Войти
+                        h2.visually-hidden В вашей корзине
+                        p.page-section__text 3 товара на сумму <span>25 000</span> ₽
+                        +product-card({
+                            title: "Утепленная стеганная куртка женская Top Hills",
+                            img: "product-1",
+                            article: "512-05",
+                            season: "Осень-зима",
+                            sizes: [
+                                {
+                                    id: "xs",
+                                    checked: false,
+                                    disabled: false
+                                },
+                                {
+                                    id: "s",
+                                    checked: true,
+                                    disabled: false
+                                },
+                                {
+                                    id: "m",
+                                    checked: false,
+                                    disabled: false
+                                },
+                                {
+                                    id: "l",
+                                    checked: false,
+                                    disabled: true
+                                },
+                                {
+                                    id: "xl",
+                                    checked: false,
+                                    disabled: true
+                                }
+                            ],
+                            colors: [
+                                {
+                                    id: "black",
+                                    checked: false,
+                                },
+                                {
+                                    id: "blue",
+                                    checked: true,
+                                    style: "--color: #106DA1;"
+                                },
+                                {
+                                    id: "brown",
+                                    checked: false,
+                                    style: "--color: #AE6D0C;"
+                                }
+                            ]
+                        })
+
+                        +product-card({
+                            title: "Вязанная шапка Zolla",
+                            img: "product-2",
+                            article: "891-256",
+                            season: "Демисезон",
+                            sizes: [
+                                {
+                                    id: "xs",
+                                    checked: false,
+                                    disabled: false
+                                },
+                                {
+                                    id: "s",
+                                    checked: true,
+                                    disabled: false
+                                },
+                                {
+                                    id: "m",
+                                    checked: false,
+                                    disabled: false
+                                },
+                                {
+                                    id: "l",
+                                    checked: false,
+                                    disabled: true
+                                },
+                                {
+                                    id: "xl",
+                                    checked: false,
+                                    disabled: true
+                                }
+                            ],
+                            colors: [
+                                {
+                                    id: "black",
+                                    checked: true,
+                                }
+                            ]
+                        })
 
 
 block modals

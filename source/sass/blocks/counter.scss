@@ -1,0 +1,29 @@
+.counter {
+    display: flex;
+    align-items: center;
+    background-color: $color-light-grey;
+    border-radius: 5px;
+
+    &__btn {
+        display: inline-flex;
+        flex-shrink: 0;
+        color: inherit;
+        transition: color $trans-default;
+
+        svg {
+            width: 32px;
+            height: 32px;
+        }
+
+
+        // &:disabled {
+        //     color: $color-medium-grey;
+
+        //     pointer-events: none;
+        // }
+    }
+
+    &__count {
+        padding: 0 16px;
+    }
+}

@@ -6,10 +6,18 @@
 @import "global/container";
 
 // Blocks
+@import "blocks/typography";
 @import "blocks/page-header";
+@import "blocks/page-section";
+@import "blocks/counter";
 @import "blocks/main-nav";
 @import "blocks/burger";
 @import "blocks/breadcrumbs";
+@import "blocks/details";
+@import "blocks/twister";
+@import "blocks/size-toggler";
+@import "blocks/color-toggler";
+@import "blocks/product-card";
 @import "blocks/btn";
 @import "blocks/custom-input";
 @import "blocks/custom-toggle";

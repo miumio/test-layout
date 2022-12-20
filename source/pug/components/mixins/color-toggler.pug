@@ -1,0 +1,5 @@
+mixin color-toggler(data)
+
+    .color-toggler(style=data.style ? data.style : null)&attributes(attributes)
+      input(type="radio", id=data.id, name=data.name, checked=data.checked, required)
+      label(for=data.id)=data.id

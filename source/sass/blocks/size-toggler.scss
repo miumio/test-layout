@@ -1,0 +1,48 @@
+.size-toggler {
+    display: inline-flex;
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.25;
+    text-transform: uppercase;
+
+
+    input {
+        position: absolute;
+
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+
+        clip: rect(0 0 0 0);
+    }
+
+    label {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 8px;
+        min-width: 30px;
+
+        user-select: none;
+
+        background-color: $color-light-grey;
+        border-radius: 8px;
+        transition: background-color $trans-default;
+        cursor: pointer;
+
+        &:focus,
+        &:hover {
+            background-color: $color-medium-grey;
+        }
+    }
+
+    input:focus ~ label,
+    input:checked ~ label {
+        color: $color-white;
+        background-color: $color-black;
+    }
+
+    input:disabled ~ label {
+        color: $color-medium-grey;
+        pointer-events: none;
+    }
+}
